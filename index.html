@@ -52,10 +52,14 @@
 <script>
      const botoes = document.querySelectorAll("button");
 
-     botoes.forEach()
-     botao.addEventListener("click", botaoClicado);
-   
-   function botaoClicado(){
+     botoes.forEach( function(botao){
+          botao.addEventListener("click", botaoClicado);
+    
+     }
+
+     }
+     
+ function botaoClicado(){
       comsole.log("fui clicado");
       let texto = botao.querySelector("span");
       texto.textContent++;
