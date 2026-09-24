@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color: #780099;
-                color: #FFFFFF;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            main{
-                background-color: #FFFFFF;
-                color: #780099;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            img{
-                height: 80px;
-                width: 80px;
-            }
-            .artigo-autor {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h2>Meu blog tech</h2>
-            <p>Vou compartilhar conhecimentos sobre tecnologia e programação.</p>
-        </header>
-        <main>
-            <img src="img blog da gabi.jpg" alt="Ícone minimalista com fundo roxo e elementos brancos,
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #780099;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #780099;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Meu blog tech</h2>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação.</p>
+    </header>
+    <main>
+        <article>
+            
+        </article>
+        <img src="img blog da gabi.jpg" alt="Ícone minimalista com fundo roxo e elementos brancos,
             exibindo um livro aberto do qual sai um foguete, 
             cercado por conexões de rede e ícones de tecnologia e educação.">
-            <div>
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Gabrielly Souza</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades
-                    da área de tecnologia.<p> 
+        <div>
+            <h2>Meu primeiro post</h2>
+            <p class="artigo-autor">Por: Gabrielly Souza</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades
+                da área de tecnologia.
+            <p>
                 <button>❤️ <span>o</span></button>
                 <button>👍 <span>o</span></button>
-            </div>
+        </div>
 
-     </main>
+    </main>
 </body>
 <script>
-     const botoes = document.querySelectorAll("button");
+    const botoes = document.querySelectorAll("button");
 
-     botoes.forEach( function(botao){
-          botao.addEventListener("click", botaoClicado);
-        function botaoClicado(){
-           comsole.log("fui clicado");
-           let texto = botao.querySelector("span");
-           texto.textContent++;
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            comsole.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
         }
-    }
-)  
+    })
 
 
-</script> 
+</script>
+
 </html>
